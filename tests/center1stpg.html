@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Hero section - centered content */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .hero p.subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #7f8c8d;
+            max-width: 600px;
+        }
+        
+        .hero .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .hero .btn:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* About Me section */
+        .about {
+            padding: 80px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #34495e;
+            line-height: 1.8;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero section with centered content -->
+    <section class="hero">
+        <h1>Welcome to My Page</h1>
+        <p class="subtitle">This is a brief introduction to who I am and what I do</p>
+        <button class="btn" onclick="window.location.href='#about'">Learn More</button>
+    </section>
+    
+    <!-- About Me section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate individual with diverse interests and skills. I enjoy creating meaningful projects and solving complex problems. My journey has taken me through various fields, allowing me to develop a unique perspective on the world.</p>
+        
+        <p>With a background in technology and design, I bridge the gap between functionality and aesthetics. I believe in continuous learning and pushing boundaries to create innovative solutions.</p>
+        
+        <p>When I'm not working, you can find me exploring nature, reading books, or experimenting with new recipes in the kitchen. I'm always looking for new challenges and opportunities to grow.</p>
+    </section>
+</body>
+</html>
